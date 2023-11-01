@@ -40,7 +40,8 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
             return Center(
               child: CircularProgressIndicator(),
             );
-          } else if (provider.movieState == RequestState.Loaded) {
+          }
+          if (provider.movieState == RequestState.Loaded) {
             final movie = provider.movie;
             return SafeArea(
               child: DetailContent(
@@ -49,9 +50,9 @@ class _MovieDetailPageState extends State<MovieDetailPage> {
                 provider.isAddedToWatchlist,
               ),
             );
-          } else {
-            return Text(provider.message);
           }
+
+          return Text(provider.message);
         },
       ),
     );
@@ -71,7 +72,7 @@ class DetailContent extends StatelessWidget {
     return Stack(
       children: [
         CachedNetworkImage(
-          imageUrl: 'https://image.tmdb.org/t/p/w500${movie.posterPath}',
+          imageUrl: '$BASE_IMAGE_URL${movie.posterPath}',
           width: screenWidth,
           placeholder: (context, url) => Center(
             child: CircularProgressIndicator(),

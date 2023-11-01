@@ -44,3 +44,10 @@ const kColorScheme = ColorScheme(
   onError: Colors.white,
   brightness: Brightness.dark,
 );
+
+// type movie or tvshow
+const String movie = 'MOVIE';
+const String tvshow = 'TVSHOW';
+const String watchlistAddTvShowSuccessMessage = 'Added to TvShow Watchlist';
+const String watchlistRemoveTvShowSuccessMessage =
+    'Removed from TvShow Watchlist';
