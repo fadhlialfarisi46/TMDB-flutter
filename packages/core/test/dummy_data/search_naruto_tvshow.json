@@ -1,0 +1,27 @@
+{
+  "page": 1,
+  "results": [
+    {
+      "backdrop_path": "/naruto.jpg",
+      "first_air_date": "2008-01-01",
+      "genre_ids": [
+        12,
+        20
+      ],
+      "id": 99999,
+      "name": "Naruto",
+      "origin_country": [
+        "JP"
+      ],
+      "original_language": "en",
+      "original_name": "Naruto",
+      "overview": "this is naruto.",
+      "popularity": 9999.1234,
+      "poster_path": "/naruto.jpg",
+      "vote_average": 9.9,
+      "vote_count": 9000
+    }
+  ],
+  "total_pages": 1,
+  "total_results": 1
+}
