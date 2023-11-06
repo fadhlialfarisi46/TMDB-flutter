@@ -7,7 +7,6 @@
  */
 import 'package:core/data/models/models.dart';
 import 'package:core/domain/entities/genre.dart';
-import 'package:core/domain/entities/last_episode_to_air.dart';
 import 'package:core/domain/entities/season.dart';
 import 'package:core/domain/entities/tvshow.dart';
 import 'package:core/domain/entities/tvshow_detail.dart';
@@ -40,19 +39,6 @@ final testTvShowDetail = TvShowDetail(
   id: 1,
   languages: const ['en'],
   lastAirDate: DateTime.parse('2022-14-08'),
-  lastEpisodeToAir: LastEpisodeToAir(
-      airDate: DateTime.parse('2022-14-08'),
-      episodeNumber: 1,
-      id: 1,
-      name: 'name',
-      overview: 'overview',
-      productionCode: 'productionCode',
-      runtime: 1,
-      seasonNumber: 1,
-      showId: 1,
-      stillPath: 'stillPath',
-      voteAverage: 1,
-      voteCount: 1),
   name: 'name',
   numberOfEpisodes: 1,
   numberOfSeasons: 1,

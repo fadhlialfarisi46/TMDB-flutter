@@ -41,8 +41,7 @@ class _TvShowPageState extends State<TvShowPage> with RouteAware {
         actions: [
           IconButton(
             onPressed: () {
-              // Navigator.pushNamed(context, SearchPage.ROUTE_NAME,
-              //     arguments: tvshow);
+              Navigator.pushNamed(context, SEARCH_ROUTE, arguments: tvshow);
             },
             icon: const Icon(Icons.search),
           )

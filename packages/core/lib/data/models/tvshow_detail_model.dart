@@ -17,7 +17,6 @@ class DetailTvShowResponse extends Equatable {
     required this.id,
     required this.languages,
     required this.lastAirDate,
-    required this.lastEpisodeToAir,
     required this.name,
     this.nextEpisodeToAir,
     required this.numberOfEpisodes,
@@ -44,7 +43,6 @@ class DetailTvShowResponse extends Equatable {
   int id;
   List<String> languages;
   DateTime lastAirDate;
-  LastEpisodeToAirModel lastEpisodeToAir;
   String name;
   dynamic nextEpisodeToAir;
   int numberOfEpisodes;
@@ -73,8 +71,6 @@ class DetailTvShowResponse extends Equatable {
         id: json["id"],
         languages: List<String>.from(json["languages"].map((x) => x)),
         lastAirDate: DateTime.parse(json["last_air_date"]),
-        lastEpisodeToAir:
-            LastEpisodeToAirModel.fromJson(json["last_episode_to_air"]),
         name: json["name"],
         nextEpisodeToAir: json["next_episode_to_air"],
         numberOfEpisodes: json["number_of_episodes"],
@@ -105,7 +101,6 @@ class DetailTvShowResponse extends Equatable {
         "languages": List<dynamic>.from(languages.map((x) => x)),
         "last_air_date":
             "${lastAirDate.year.toString().padLeft(4, '0')}-${lastAirDate.month.toString().padLeft(2, '0')}-${lastAirDate.day.toString().padLeft(2, '0')}",
-        "last_episode_to_air": lastEpisodeToAir.toJson(),
         "name": name,
         "next_episode_to_air": nextEpisodeToAir,
         "number_of_episodes": numberOfEpisodes,
@@ -134,7 +129,6 @@ class DetailTvShowResponse extends Equatable {
         id: id,
         languages: languages,
         lastAirDate: lastAirDate,
-        lastEpisodeToAir: lastEpisodeToAir.toEntity(),
         name: name,
         numberOfEpisodes: numberOfEpisodes,
         numberOfSeasons: numberOfSeasons,
@@ -162,7 +156,6 @@ class DetailTvShowResponse extends Equatable {
         id,
         languages,
         lastAirDate,
-        lastEpisodeToAir,
         name,
         nextEpisodeToAir,
         numberOfEpisodes,

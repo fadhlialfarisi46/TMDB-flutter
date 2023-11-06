@@ -5,13 +5,7 @@
  *  * Last modified 11/2/23, 8:40 AM
  *
  */
-/*
- * *
- *  * Created by fadhlialfarisi on 11/2/23, 8:39 AM
- *  * Copyright (c) 2023 . All rights reserved.
- *  * Last modified 11/2/23, 8:39 AM
- *
- */
+
 import 'dart:convert';
 
 import 'package:core/data/models/models.dart';

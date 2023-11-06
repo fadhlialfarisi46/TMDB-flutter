@@ -8,7 +8,6 @@
 import 'package:equatable/equatable.dart';
 
 import '../../domain/entities/genre.dart';
-import '../../domain/entities/last_episode_to_air.dart';
 import '../../domain/entities/movie.dart';
 import '../../domain/entities/movie_detail.dart';
 import '../../domain/entities/season.dart';
@@ -16,7 +15,6 @@ import '../../domain/entities/tvshow.dart';
 import '../../domain/entities/tvshow_detail.dart';
 
 part 'genre_model.dart';
-part 'last_episode_to_air_model.dart';
 part 'movie_detail_model.dart';
 part 'movie_model.dart';
 part 'movie_response.dart';

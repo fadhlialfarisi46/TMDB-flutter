@@ -9,7 +9,6 @@ import 'package:core/domain/entities/season.dart';
 import 'package:equatable/equatable.dart';
 
 import 'genre.dart';
-import 'last_episode_to_air.dart';
 
 class TvShowDetail extends Equatable {
   TvShowDetail({
@@ -21,7 +20,6 @@ class TvShowDetail extends Equatable {
     required this.id,
     required this.languages,
     required this.lastAirDate,
-    required this.lastEpisodeToAir,
     required this.name,
     this.nextEpisodeToAir,
     required this.numberOfEpisodes,
@@ -48,7 +46,6 @@ class TvShowDetail extends Equatable {
   int id;
   List<String> languages;
   DateTime lastAirDate;
-  LastEpisodeToAir lastEpisodeToAir;
   String name;
   dynamic nextEpisodeToAir;
   int numberOfEpisodes;
@@ -76,7 +73,6 @@ class TvShowDetail extends Equatable {
         id,
         languages,
         lastAirDate,
-        lastEpisodeToAir,
         name,
         nextEpisodeToAir,
         numberOfEpisodes,
